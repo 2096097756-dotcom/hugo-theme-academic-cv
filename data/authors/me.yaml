@@ -11,19 +11,22 @@ name:
 postnominals: []
 status:
   icon: "⚛️"
-role: Undergraduate Student @ SGY
+role: Undergraduate Student @ SGY / 本科生于中国科学技术大学少年班学院
 bio: |
   I am currently a freshman undergraduate student at the School of the Gifted Young (SGY), University of Science and Technology of China (USTC).
+  *   我目前是中国科学技术大学(USTC)少年班学院(SGY)的大一本科生。
   
   With a strong passion for Physics, I maintained a GPA of 4.15/4.30 (Avg 93.21) during my first semester. I am currently in the phase of exploring various sub-fields of physics, such as Condensed Matter Physics and Quantum Information.
+  *   对物理学抱有浓厚热情，第一学期GPA为4.15/4.30(平均93.21)。我目前正在探索物理学的各个子领域,如凝聚态物理和量子信息。
 
   My goal is to broaden my horizons by communicating with professors and researchers. I am also planning to take advanced courses in the "Four Mechanics" (Theoretical Mechanics, Electrodynamics, Quantum Mechanics, and Statistical Mechanics) to build a solid theoretical foundation.
+  *   我的目标是通过与教授和研究人员沟通来开阔视野。我还计划学习"四大力学"(理论力学、电动力学、量子力学和统计力学)的高等课程，以建立扎实的理论基础。
 
 affiliations:
-  - name: University of Science and Technology of China (USTC)
+  - name: University of Science and Technology of China (USTC，中国科学技术大学) 
     url: https://www.ustc.edu.cn/
-  - name: School of the Gifted Young (SGY)
-    url: https://scgy.ustc.edu.cn/
+  - name: School of the Gifted Young (SGY，少年班学院)
+    url: https://sgy.ustc.edu.cn/
 
 links:
   - icon: at-symbol
@@ -32,6 +35,7 @@ links:
   - icon: brands/github
     url: https://github.com/2096097756-dotcom
   - icon: brands/qq
+    icon_pack: fab
     url: tencent://message/?uin=2096097756&Site=&Menu=yes
     label: QQ 2096097756
   - icon: brands/weixin
@@ -39,23 +43,23 @@ links:
     label: 'WeChat ID: jerrydingjerry'
 
 interests:
-  - Theoretical Physics
-  - Condensed Matter Physics
-  - Quantum Information
-  - Computational Physics
-  - Deep Learning
+  - Theoretical Physics /理论物理
+  - Condensed Matter Physics /凝聚态物理
+  - Quantum Information /量子信息
+  - Computational Physics /计算物理
+  - Deep Learning /深度学习
 
 education:
-  - degree: B.Sc. in Physics (Candidate)
-    institution: University of Science and Technology of China
+  - degree: B.Sc. in Physics (Candidate) /本科生
+    institution: University of Science and Technology of China /中国科学技术大学
     start: 2025-09-01
     summary: |
       **School of the Gifted Young (少年班学院)**
       *   **GPA:** 4.15 / 4.30
       *   **Average Score:** 93.21
       *   Current Focus: Building a strong foundation in mathematics and physics, aiming to study the "Four Mechanics" in advance.
-  - degree: High School Diploma
-    institution: Hefei No.1 High School (合肥一中)
+  - degree: High School Diploma /高中学历
+    institution: Hefei No.1 High School /合肥一中
     start: 2023-09-01
     end: 2025-06-30
     summary: Admitted to USTC School of the Gifted Young via early entry.

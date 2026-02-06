@@ -1,0 +1,51 @@
+/* custom.css - 静态覆盖，放在 static 以便直接生效 */
+
+/* 覆盖 Tailwind 常见 max-width 限制 */
+.max-w-sm, .max-w-md, .max-w-lg, .max-w-xl, .max-w-2xl,
+.max-w-3xl, .max-w-4xl, .max-w-5xl, .max-w-6xl, .max-w-7xl,
+.max-w-screen-sm, .max-w-screen-md, .max-w-screen-lg, .max-w-screen-xl, .max-w-screen-2xl {
+  max-width: 100% !important;
+}
+
+/* 主容器拉宽：在大屏上使用更大 max-width，移动端保持 92% */
+.container,
+.page-wrapper .container,
+section .container {
+  width: 92% !important;
+  max-width: 1400px !important; /* 改成想要的最大值 */
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (max-width: 640px) {
+  .container,
+  .page-wrapper .container,
+  section .container {
+    width: 95% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* 让文章正文(Prose)尽量放开宽度限制 */
+.prose,
+main,
+.main-content,
+.page-content,
+.bio-text {
+  max-width: 100% !important;
+}
+
+/* 特定块的容器优化 */
+.resume-biography-3 .container {
+  max-width: 1400px !important;
+}
+
+/* 移除 mx-auto 的 max-width 约束（如果有） */
+.mx-auto {
+  max-width: none !important;
+}
+
+/* 如果你想更“全屏”，把上面的 max-width 改为 1900px 或 100% */

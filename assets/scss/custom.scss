@@ -1,0 +1,38 @@
+/* custom.scss - 扩展内容宽度优化 */
+
+/* 1. 覆盖所有 Tailwind 的最大宽度限制 */
+.max-w-sm, .max-w-md, .max-w-lg, .max-w-xl, .max-w-2xl, 
+.max-w-3xl, .max-w-4xl, .max-w-5xl, .max-w-6xl, .max-w-7xl, 
+.max-w-screen-sm, .max-w-screen-md, .max-w-screen-lg, .max-w-screen-xl, .max-w-screen-2xl {
+    max-width: 100% !important;
+}
+
+/* 2. 主容器拉宽 */
+.container, 
+.page-wrapper .container, 
+section .container {
+    max-width: 1200px !important;
+    width: 92% !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* 3. 文章内容区域放宽 */
+.prose, 
+main, 
+.main-content, 
+.page-content {
+    max-width: 100% !important;
+}
+
+/* 4. 特殊块的优化 */
+.resume-biography-3 .container {
+    max-width: 1200px !important;
+}
+
+/* 5. 移除多余的宽度约束 */
+.mx-auto {
+    max-width: none !important;
+}
