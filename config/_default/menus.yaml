@@ -4,9 +4,18 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Bio
+  - name: Bio/个人简介
     url: /
     weight: 10
+  - name: Education/教育经历
+    url: /#education # 对应刚才加的 id
+    weight: 30
+  - name: Awards/获得奖项
+    url: /#awards    # 对应刚才加的 id
+    weight: 40
+  - name: Interests/研究兴趣
+    url: /#interests # 你需要去学术兴趣那个block加 id: interests
+    weight: 50
   ##- name: Papers
     ##url: /#papers
     ##weight: 11
