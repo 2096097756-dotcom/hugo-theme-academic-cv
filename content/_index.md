@@ -15,6 +15,7 @@ sections:
   # ────────────────────────────────────────────────────────────
   - block: resume-biography-3
     content:
+      title: 'Professional Summary'
       username: me
       text: '' 
       # button:
@@ -34,22 +35,28 @@ sections:
   # 2. 教育背景与技能 (Education & Skills)
   # ────────────────────────────────────────────────────────────
   - block: markdown
-    id:education #
+    id: education #
     content:
-      title: '🎓 Education & Skills'
+      title: '🎓 Education & Skills/教育背景与技能'
       subtitle: ''
       text: |-
-        ### **Education**
+        ### **Education/教育背景**
         
-        *   **2025.09 - Present**: Undergraduate Student, **School of the Gifted Young (SCGY)**, University of Science and Technology of China (**USTC**).
-            *   **GPA**: 4.15 / 4.30 (Avg: 93.21)
-            *   **Major**: Physics (Intended)
+        *   **2025.09 - Present**: Undergraduate Student, **School of the Gifted Young (SGY)**, University of Science and Technology of China (**USTC**).
+            *   **2025.09 - 至今**：中国科学技术大学(USTC)少年班学院(SGY)本科生
+        *   **GPA**: 4.15 / 4.30 (Avg: 93.21)
+        *   **Major**: Physics (Intended)
+            *   **专业**：物理学（预期主修）
         *   **2023.09 - 2025.06**: High School Student, Hefei No.1 High School.
+            *   **2023.09 - 2025.06**：合肥一中高中学生
 
-        ### **Skills**
+        ### **Skills/技能**
         
         *   **Languages**: Chinese (Native), English (Learning)
+            *   **语言**：中文（母语）、英语（学习中）
         *   **Programming**: C/C++ (Basic)
+            *   **编程**：C/C++（基础）
+        
         
     design:
       columns: '2'
@@ -59,9 +66,9 @@ sections:
   # 【修复点】改用 Markdown 组件，100%不会报错
   # ────────────────────────────────────────────────────────────
   - block: markdown
-    id:awards  #
+    id: awards  #
     content:
-      title: '🏆 Honors & Awards'
+      title: '🏆 Honors & Awards/获奖荣誉'
       subtitle: ''
       text: |-
         *   **2025.11**: Second Prize, National College Student Mathematics Competition (Anhui Division)
@@ -75,17 +82,21 @@ sections:
   # 4. 学术兴趣 (Research Interests)
   # ────────────────────────────────────────────────────────────
   - block: markdown
-    id:interests  #
+    id: interests  #
     content:
-      title: '🔬 Academic Interests'
+      title: '🔬 Academic Interests/学术兴趣'
       subtitle: ''
       text: |-
-        I am currently a freshman exploring various fields in **Physics**. 
+        I am currently a freshman exploring various fields in **Physics**.
+        *   我是一名大一学生，正在探索物理学的各个领域。
         
         *   **Physics**: I have not yet decided on a specific sub-field but I am exploring areas such as **Condensed Matter Physics** and **Quantum Information**. My current goal is to build a solid foundation in theoretical physics (Four Mechanics) to broaden my horizons.
+            *   **物理学**：我尚未确定具体的专业方向，但正在探索**凝聚态物理**和**量子信息**等领域。我目前的目标是为理论物理学(四大力学)打下坚实基础，以拓宽视野。
         *   **Interdisciplinary**: I also have a keen interest in **Deep Learning** and **Artificial Intelligence**, looking for opportunities to combine AI with physical sciences.
+            *   **跨学科**：我还对**深度学习**和**人工智能**有浓厚的兴趣，寻求将AI与物理学结合的机会。
         
         I am open to communication with professors and seniors to explore research opportunities.
+        *   我欢迎与教授和研究人员进行沟通，探索研究机会。
     design:
       columns: '1'
 
