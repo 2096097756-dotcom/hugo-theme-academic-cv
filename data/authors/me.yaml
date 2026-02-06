@@ -11,9 +11,9 @@ name:
 postnominals: []
 status:
   icon: "⚛️"
-role: Undergraduate Student @ SCGY
+role: Undergraduate Student @ SGY
 bio: |
-  I am currently a freshman undergraduate student at the School of the Gifted Young (SCGY), University of Science and Technology of China (USTC).
+  I am currently a freshman undergraduate student at the School of the Gifted Young (SGY), University of Science and Technology of China (USTC).
   
   With a strong passion for Physics, I maintained a GPA of 4.15/4.30 (Avg 93.21) during my first semester. I am currently in the phase of exploring various sub-fields of physics, such as Condensed Matter Physics and Quantum Information.
 
@@ -22,7 +22,7 @@ bio: |
 affiliations:
   - name: University of Science and Technology of China (USTC)
     url: https://www.ustc.edu.cn/
-  - name: School of the Gifted Young (SCGY)
+  - name: School of the Gifted Young (SGY)
     url: https://scgy.ustc.edu.cn/
 
 links:
@@ -43,6 +43,7 @@ interests:
   - Condensed Matter Physics
   - Quantum Information
   - Computational Physics
+  - Deep Learning
 
 education:
   - degree: B.Sc. in Physics (Candidate)

@@ -2,7 +2,7 @@
 # Leave the homepage title empty to use the site title
 title: ''
 summary: ''
-date: 2022-10-24
+date: 2025-02-07
 type: landing
 
 design:
@@ -10,122 +10,146 @@ design:
   spacing: '6rem'
 
 sections:
+  # ────────────────────────────────────────────────────────────
+  # 1. 个人档案 (Profile / Bio)
+  # ────────────────────────────────────────────────────────────
   - block: resume-biography-3
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
-      text: ''
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
+      text: '' 
+      # button:
+      #   text: Download CV
+      #   url: uploads/resume.pdf
     design:
-      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
         gradient_mesh:
           enable: true
-
-      # Name heading sizing to accommodate long or short names
       name:
-        size: md # Options: xs, sm, md, lg (default), xl
-
-      # Avatar customization
+        size: md
       avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
+        size: medium
+        shape: circle
+
+  # ────────────────────────────────────────────────────────────
+  # 2. 教育背景与技能 (Education & Skills)
+  # ────────────────────────────────────────────────────────────
   - block: markdown
+    id:education
     content:
-      title: '📚 My Research'
+      title: '🎓 Education & Skills'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        ### **Education**
+        
+        *   **2025.09 - Present**: Undergraduate Student, **School of the Gifted Young (SCGY)**, University of Science and Technology of China (**USTC**).
+            *   **GPA**: 4.15 / 4.30 (Avg: 93.21)
+            *   **Major**: Physics (Intended)
+        *   **2023.09 - 2025.06**: High School Student, Hefei No.1 High School.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        ### **Skills**
+        
+        *   **Languages**: Chinese (Native), English (Learning)
+        *   **Programming**: C/C++ (Basic)
+        
+    design:
+      columns: '2'
 
-        Please reach out to collaborate 😃
+  # ────────────────────────────────────────────────────────────
+  # 3. 获奖荣誉 (Honors & Awards)
+  # 【修复点】改用 Markdown 组件，100%不会报错
+  # ────────────────────────────────────────────────────────────
+  - block: markdown
+    id:awards
+    content:
+      title: '🏆 Honors & Awards'
+      subtitle: ''
+      text: |-
+        *   **2025.11**: Second Prize, National College Student Mathematics Competition (Anhui Division)
+            *   第17届全国大学生数学竞赛安徽赛区二等奖
+        *   **2024.09**: Second Prize, National High School Physics Olympiad (Anhui Division)
+            *   第41届全国中学生物理竞赛安徽赛区二等奖
     design:
       columns: '1'
-  - block: collection
-    id: papers
+
+  # ────────────────────────────────────────────────────────────
+  # 4. 学术兴趣 (Research Interests)
+  # ────────────────────────────────────────────────────────────
+  - block: markdown
+    id:interests
     content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
-      view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-  - block: collection
-    id: news
-    content:
-      title: Recent News
+      title: '🔬 Academic Interests'
       subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 10
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: card
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
-  - block: cta-card
-    demo: true # Only display this section in the HugoBlox Kit demo site
-    content:
-      title: 👉 Build your own academic website like this
       text: |-
-        This site is generated by HugoBlox Kit - the FREE, Hugo-based open source website builder trusted by 250,000+ academics like you.
-
-        <a class="github-button" href="https://github.com/HugoBlox/kit" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star HugoBlox/kit on GitHub">Star</a>
-
-        Easily build anything with blocks - no-code required!
-
-        From landing pages, second brains, and courses to academic resumés, conferences, and tech blogs.
-      button:
-        text: Get Started
-        url: https://hugoblox.com/templates/
+        I am currently a freshman exploring various fields in **Physics**. 
+        
+        *   **Physics**: I have not yet decided on a specific sub-field but I am exploring areas such as **Condensed Matter Physics** and **Quantum Information**. My current goal is to build a solid foundation in theoretical physics (Four Mechanics) to broaden my horizons.
+        *   **Interdisciplinary**: I also have a keen interest in **Deep Learning** and **Artificial Intelligence**, looking for opportunities to combine AI with physical sciences.
+        
+        I am open to communication with professors and seniors to explore research opportunities.
     design:
-      card:
-        # Card background color (CSS class)
-        css_class: 'bg-primary-300 dark:bg-primary-700'
-        css_style: ''
+      columns: '1'
+
+  # ────────────────────────────────────────────────────────────
+  # 5. 待启用板块 (Hidden / Future Use)
+  # ────────────────────────────────────────────────────────────
+
+  # [精选论文]
+  # - block: collection
+  #   id: papers
+  #   content:
+  #     title: Featured Publications
+  #     filters:
+  #       folders:
+  #         - publications
+  #       featured_only: true
+  #   design:
+  #     view: article-grid
+  #     columns: 2
+
+  # [最近发表]
+  # - block: collection
+  #   content:
+  #     title: Recent Publications
+  #     text: ''
+  #     filters:
+  #       folders:
+  #         - publications
+  #       exclude_featured: false
+  #   design:
+  #     view: citation
+
+  # [讲座与活动]
+  # - block: collection
+  #   id: talks
+  #   content:
+  #     title: Recent & Upcoming Talks
+  #     filters:
+  #       folders:
+  #         - events
+  #   design:
+  #     view: card
+
+  # [新闻动态]
+  # - block: collection
+  #   id: news
+  #   content:
+  #     title: Recent News
+  #     subtitle: ''
+  #     text: ''
+  #     page_type: blog
+  #     count: 10
+  #     filters:
+  #       author: ''
+  #       category: ''
+  #       tag: ''
+  #       exclude_featured: false
+  #       exclude_future: false
+  #       exclude_past: false
+  #       publication_type: ''
+  #     offset: 0
+  #     order: desc
+  #   design:
+  #     view: card
+  #     spacing:
+  #       padding: [0, 0, 0, 0]
 ---
